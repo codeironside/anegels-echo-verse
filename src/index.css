@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme definitions */
+.dark-academia {
+  --color-primary: 26, 26, 46;    /* #1A1A2E */
+  --color-secondary: 198, 169, 105; /* #C6A969 */
+  --color-accent: 138, 3, 3;      /* #8A0303 */
+  --color-text: 234, 215, 193;    /* #EAD7C1 */
+  --color-background: 18, 18, 18;  /* #121212 */
+  --color-border: 45, 45, 45;     /* #2D2D2D */
+  --color-card: 30, 30, 30;       /* #1E1E1E */
+  
+  @apply bg-[rgb(var(--color-background))] text-[rgb(var(--color-text))];
+}
+
+.light {
+  --color-primary: 250, 243, 224;  /* #FAF3E0 */
+  --color-secondary: 138, 3, 3;    /* #8A0303 */
+  --color-accent: 62, 62, 62;      /* #3E3E3E */
+  --color-text: 26, 26, 46;        /* #1A1A2E */
+  --color-background: 255, 255, 255; /* #FFFFFF */
+  --color-border: 224, 224, 224;   /* #E0E0E0 */
+  --color-card: 245, 245, 245;     /* #F5F5F5 */
+  
+  @apply bg-[rgb(var(--color-background))] text-[rgb(var(--color-text))];
+}
+
+.cozy-cafe {
+  --color-primary: 74, 44, 42;     /* #4A2C2A */
+  --color-secondary: 212, 185, 150; /* #D4B996 */
+  --color-accent: 166, 61, 47;     /* #A63D2F */
+  --color-text: 62, 62, 62;        /* #3E3E3E */
+  --color-background: 245, 237, 224; /* #F5EDE0 */
+  --color-border: 196, 182, 160;   /* #C4B6A0 */
+  --color-card: 232, 217, 197;     /* #E8D9C5 */
+  
+  @apply bg-[rgb(var(--color-background))] text-[rgb(var(--color-text))];
+}
+
+.mystery-noir {
+  --color-primary: 18, 18, 18;     /* #121212 */
+  --color-secondary: 90, 90, 90;   /* #5A5A5A */
+  --color-accent: 178, 34, 34;     /* #B22222 */
+  --color-text: 224, 224, 224;     /* #E0E0E0 */
+  --color-background: 30, 30, 30;  /* #1E1E1E */
+  --color-border: 66, 66, 66;      /* #424242 */
+  --color-card: 45, 45, 45;        /* #2D2D2D */
+  
+  @apply bg-[rgb(var(--color-background))] text-[rgb(var(--color-text))];
+}
+
+.solarized-tech {
+  --color-primary: 0, 43, 54;      /* #002B36 */
+  --color-secondary: 7, 54, 66;    /* #073642 */
+  --color-accent: 211, 54, 130;    /* #D33682 */
+  --color-text: 131, 148, 150;     /* #839496 */
+  --color-background: 253, 246, 227; /* #FDF6E3 */
+  --color-border: 147, 161, 161;   /* #93A1A1 */
+  --color-card: 238, 232, 213;     /* #EEE8D5 */
+  
+  @apply bg-[rgb(var(--color-background))] text-[rgb(var(--color-text))];
+}
+
+.vintage-sepia {
+  --color-primary: 240, 230, 212;  /* #F0E6D4 */
+  --color-secondary: 201, 168, 124; /* #C9A87C */
+  --color-accent: 107, 66, 38;     /* #6B4226 */
+  --color-text: 74, 58, 42;        /* #4A3A2A */
+  --color-background: 248, 241, 224; /* #F8F1E0 */
+  --color-border: 217, 199, 167;   /* #D9C7A7 */
+  --color-card: 237, 224, 201;     /* #EDE0C9 */
+  
+  @apply bg-[rgb(var(--color-background))] text-[rgb(var(--color-text))];
+}
+
+.futuristic-neon {
+  --color-primary: 10, 10, 24;     /* #0A0A18 */
+  --color-secondary: 26, 26, 46;   /* #1A1A2E */
+  --color-accent: 0, 255, 157;     /* #00FF9D */
+  --color-text: 255, 255, 255;     /* #FFFFFF */
+  --color-background: 18, 18, 18;  /* #121212 */
+  --color-border: 45, 45, 45;      /* #2D2D2D */
+  --color-card: 30, 30, 30;        /* #1E1E1E */
+  
+  @apply bg-[rgb(var(--color-background))] text-[rgb(var(--color-text))];
+}
+
+.nature-grove {
+  --color-primary: 42, 77, 42;     /* #2A4D2A */
+  --color-secondary: 90, 114, 71;  /* #5A7247 */
+  --color-accent: 143, 151, 121;   /* #8F9779 */
+  --color-text: 227, 227, 211;     /* #E3E3D3 */
+  --color-background: 26, 46, 26;  /* #1A2E1A */
+  --color-border: 62, 92, 62;      /* #3E5C3E */
+  --color-card: 36, 56, 36;        /* #243824 */
+  
+  @apply bg-[rgb(var(--color-background))] text-[rgb(var(--color-text))];
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Theme transitions */
+.transition-theme {
+  transition: background-color 0.3s ease-in-out,
+              color 0.3s ease-in-out,
+              border-color 0.3s ease-in-out;
+}
+
+/* Loading screen animations */
+@keyframes inkFill {
+  from { height: 0%; }
+  to { height: 100%; }
+}
+
+.ink-fill {
+  animation: inkFill 4s ease-in-out forwards;
+}
+
+@keyframes quillWrite {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+.quill-write {
+  stroke-dasharray: 1000;
+  animation: quillWrite 3s ease-out forwards;
+}
+
+/* Particle animations */
+@keyframes particleDrift {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -10px);
+  }
+}
+
+.particle {
+  animation: particleDrift 5s ease-in-out infinite;
+}
