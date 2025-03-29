@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1A1A2E"/>
+  <path d="M600 150 L750 300 L600 450 L450 300 Z" fill="#C6A969" opacity="0.1"/>
+  <text x="600" y="250" font-family="'Playfair Display', serif" font-size="72" fill="#EAD7C1" text-anchor="middle">EchoVerse</text>
+  <text x="600" y="350" font-family="'Inter', sans-serif" font-size="32" fill="#C6A969" text-anchor="middle">Where Words Come Alive</text>
+  <path d="M580 400 Q600 420 620 400 T660 400" stroke="#8A0303" stroke-width="4" fill="none"/>
+</svg>
